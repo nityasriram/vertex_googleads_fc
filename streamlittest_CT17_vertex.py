@@ -4,7 +4,7 @@ import pandas as pd
 import altair as alt
 
 # Load data
-df = pd.read_csv("/Users/nityasriramsynthesis/Downloads/monthly_search_volume_by_seed_keyword_CT01_vertex.csv")
+df = pd.read_csv("monthly_search_volume_by_seed_keyword_CT17_vertex.csv")
 
 # Melt wide data to long format
 df_long = df.melt(id_vars=["seed_keyword"], var_name="month", value_name="volume")
